@@ -3,9 +3,9 @@
 #include "blowfish.h"
 
 int main(int argc, char** argv) {
-	uint64_t key { 0 };
-	uint64_t block { 0 };
-	char mode { 0 };	
+	uint64_t key = 0;
+	uint64_t block = 0;
+	char mode = 0;	
 	
 	if (argc == 4) {
 		mode = argv[1][1];
