@@ -4,6 +4,8 @@
 #include <vector>
 #include <iostream>
 
+namespace Cipher {
+
 class Blowfish {
 private:
 	std::vector<std::vector<uint32_t>> S = {
@@ -194,7 +196,6 @@ private:
 		0x082efa98, 0xec4e6c89, 0x452821e6, 0x38d01377, 0xbe5466cf, 0x34e90c6c,
 		0xc0ac29b7, 0xc97c50dd, 0x3f84d5b5, 0xb5470917, 0x9216d5d9, 0x8979fb1b
 	};
-
 public:
 	Blowfish(uint64_t key);
 	uint64_t encrypt(uint64_t block, char mode);
@@ -204,4 +205,6 @@ private:
 	uint32_t f(uint32_t block);
 };
 
-#endif
+} // namespace Cipher
+
+#endif // !BLOWFISH_H_
