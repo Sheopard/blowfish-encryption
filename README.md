@@ -20,7 +20,6 @@ git clone git@github.com:Sheopard/blowfish-encryption.git
 
 ```
 g++ main.cpp blowfish.* -o blowfish.exe
-
 ```
 
 ## 3. Run the executable file
